@@ -1,0 +1,8 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/distribute.rpy", line 574: is not terminated with a newline. (Check strings and parenthesis.)
+                    self.add_file("renpy", "renpy/LICENSE.txt", LICENSE_TXT
+
+Ren'Py Version: Ren'Py 6.16.3.500

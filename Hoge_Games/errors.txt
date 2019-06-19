@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 26: invalid syntax
+    frame:
+          ^
+    
+
+Ren'Py Version: Ren'Py 7.2.2.491
+Wed Jun 19 21:40:16 2019
