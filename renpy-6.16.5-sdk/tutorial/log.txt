@@ -1,11 +1,11 @@
-Wed Jun 19 21:46:03 2019
+Thu Jun 20 01:04:41 2019
 Windows-post2008Server-6.2.9200
 Ren'Py 6.16.5.525
 Ren'Py Tutorial 6.16 "In the Arena"
 
 
 Windowed mode.
-Screen sizes: virtual=(800, 600) physical=(800, 600)
+Screen sizes: virtual=(800, 600) physical=(704, 528)
 Vendor: 'NVIDIA Corporation'
 Renderer: 'GeForce GTX 1070 Ti/PCIe/SSE2'
 Version: '4.6.0 NVIDIA 430.86'
@@ -417,11 +417,11 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.003000 seconds.
 - Frame drawn at 0.007000 seconds.
-- Frame drawn at 0.008000 seconds.
-- Frame drawn at 0.008000 seconds.
-- 0.008000 seconds to render 5 frames.
+- Frame drawn at 0.010000 seconds.
+- Frame drawn at 0.010000 seconds.
+- Frame drawn at 0.011000 seconds.
+- 0.011000 seconds to render 5 frames.
 Deallocating textures.
 Done deallocating textures.
 About to quit GL.

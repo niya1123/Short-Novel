@@ -8,7 +8,16 @@
 # 一番目のパラメーターは、テキストウィンドウに表示されるキャラクターの名前です。
 # color のパラメーターを追加すると、キャラクターの名前を色付けできます。
 
-define e = Character('Eileen', color="#c8ffc8")
+define zero = Character('ゼロ?', color="#c8ffc8")
+define f = Character('企業スパイ', color='#e2aae2')
+define fx = Character('???', color='#e2aae2')
+define fxsad = Character('???', color='#e2aae2')
+
+
+define nare = Character(' ',color='#ffffff')
+
+image bg room green tata = im.Scale("bg room green tata.png", 1360, 1300)
+image bg gra = im.Scale("bg gra.jpg", 1280, 940)
 
 
 # label ステートメント（文）はゲームの処理をまとめてラベル付けします。
@@ -16,17 +25,14 @@ define e = Character('Eileen', color="#c8ffc8")
 
 # ゲームは start ラベルからスタートします。
 
+
 label start:
 
     # 背景を表示します。デフォルトではプレースホルダー（仮画像）を使用しますが、
     # images ディレクトリーにファイル（ファイル名は "bg room.png" や "bg room.jpg"）
     # を追加することにより表示できます。
 
-    init python:
-        frame:
-            xsize 640
-            ysize 485
-    scene bg room green tata
+    scene bg gra
     with fade
 
     # スプライト（立ち絵）を表示します。ここではプレースホルダーを使用していますが、
@@ -36,13 +42,23 @@ label start:
     # at ステートメントは画像の表示する位置を調整します。
     # at center は中央に下揃えで表示します。これは省略しても同じ結果になります。
     # その他に at right、at left などがデフォルトで定義されています。
+    nare "ナナリーを取り戻してから、数日が経った。"
+    
+    show zero at center with dissolve
+    zero "・・・・・・"
+    hide zero with dissolve
 
-    show eileen happy at center
+    show fx at center with dissolve
+    fx "ただいま……"
+    hide fx with dissolve
+
+    show fxsad at center with dissolve
+    fxsad "・・・・・・"
 
     # トランジション（画面遷移効果）を使って表示を画面に反映させます。
     # 台詞を表示するか with None を使うと、トランジション無しで直ちに表示します。
 
-    with dissolve
+  
 
     # 音楽を再生します。ここではタグを利用して無音を再生していますが、
     # game ディレクトリーに "music.ogg" などと命名したファイルを追加すると
@@ -55,9 +71,7 @@ label start:
 
     # 以下は台詞を表示します。
 
-    e "Ren'Py の新しいゲームを作成しました。"
-
-    e "ストーリー、画像、音楽を追加すれば、世界にリリースすることができます！"
+    
 
     # return でゲームを終了します。
 
