@@ -8,8 +8,13 @@
 # 一番目のパラメーターは、テキストウィンドウに表示されるキャラクターの名前です。
 # color のパラメーターを追加すると、キャラクターの名前を色付けできます。
 
-define e = Character('Eileen', color="#c8ffc8")
+define higasi = Character('東山 浩太郎', color="#E8E12E")
+define sion = Character('涼宮紫音', color="#EB10B9")
+define w_s = Character('????', color="#EB10B9")
+# define w_h = Character('????', color="#E8E12E")
 
+image bg school room = im.Scale("bg school room.jpg", 1280, 940)
+image sion = im.FactorScale("sion.png", .45, .45)
 
 # label ステートメント（文）はゲームの処理をまとめてラベル付けします。
 # ラベル間の移動は jump ステートメントか call ステートメントを使います。
@@ -22,7 +27,9 @@ label start:
     # images ディレクトリーにファイル（ファイル名は "bg room.png" や "bg room.jpg"）
     # を追加することにより表示できます。
 
-    scene bg room
+    scene bg school room
+
+    play music "musics/BGM/brightening.mp3"
 
     # スプライト（立ち絵）を表示します。ここではプレースホルダーを使用していますが、
     # images ディレクトリーに "eileen happy.png" などと命名したファイルを追加すると
@@ -32,27 +39,26 @@ label start:
     # at center は中央に下揃えで表示します。これは省略しても同じ結果になります。
     # その他に at right、at left などがデフォルトで定義されています。
 
-    show eileen happy at center
+    "ある日の昼下がりの教室。"
 
-    # トランジション（画面遷移効果）を使って表示を画面に反映させます。
-    # 台詞を表示するか with None を使うと、トランジション無しで直ちに表示します。
+    "突然、勢いよく教室のドアが開かれた。"
+    
+    # show sion at right with dissolve
+    w_s "よお！東山はいるか？"
 
-    with dissolve
+    "大きな声で発せられたその声に否応なしに、クラス全員の視線が向く."
 
-    # 音楽を再生します。ここではタグを利用して無音を再生していますが、
-    # game ディレクトリーに "music.ogg" などと命名したファイルを追加すると
-    # play music "music.ogg" の形で再生することができます。
+    show sion at right with dissolve
 
-    # 効果音を再生する時は play audio "filename" を使用します。
-    # play music とは違って複数の効果音を同時に再生することができます。
+    "そこには、派手な服装をした女子生徒が立っていた。"
 
-    play music "<silence .5>"
+    show higasi at left with dissolve
+    higasi "なにか用かい? 紫音さん?"
 
-    # 以下は台詞を表示します。
+    "その女子生徒の声に応えるのは、けだるそうな男子生徒。"
+    
+    
 
-    e "Ren'Py の新しいゲームを作成しました。"
-
-    e "ストーリー、画像、音楽を追加すれば、世界にリリースすることができます！"
 
     # return でゲームを終了します。
 
