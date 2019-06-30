@@ -1,0 +1,16 @@
+﻿
+Ren'Py 7.2.2.491 lint report, generated at: Thu Jun 20 00:27:42 2019
+
+game/script.rpy:40 'eileen happy' is not an image.
+
+
+Statistics:
+
+The game contains 2 dialogue blocks, containing 3 words and 57 characters, for
+an average of 1.5 words and 28 characters per block.
+
+The game contains 0 menus, 1 images, and 23 screens.
+
+
+Lint is not a substitute for thorough testing. Remember to update Ren'Py
+before releasing. New releases fix bugs and improve compatibility.
