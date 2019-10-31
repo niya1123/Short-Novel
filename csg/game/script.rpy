@@ -37,7 +37,7 @@ label others:
         $ buildings = 0
         call buildings_menu
 
-    call end
+    call end1
        
     return 
 
@@ -66,7 +66,12 @@ label buildings_menu:
             call academic
     return
     
-label end:
+label end1:
     play music "songs/bgm_maoudamashii_piano_milkeyway.ogg"
-    m "それじゃあ君がまたここに来ることを願ってるよ！それじゃあ、またね！"
+    y "ありがとう、マグロさん！近畿大学の事がよく分かったよ！"
+    m "それはよかった！"
+    m "是非君がまたここに来ることを願ってるよ！それじゃあ、またね！"
+    y "ありがとうマグロさん!"
+
+    "End1: ありがとう"
     return
