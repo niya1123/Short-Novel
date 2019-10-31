@@ -19,9 +19,17 @@ define x = Character('?', color="#c8ffc8")
 
 label start:
 
+    $ others = 0
+    $ academic = 0
+    $ buildings = 0
+
     scene bg kindai
     show magro at right
     with fade
+
+    play music "./songs/bgm_maoudamashii_piano27.ogg"
+    $ renpy.music.set_volume(0.5)
+
 
     x "やあ！近畿大学に遊びに来てくれてどうもありがとう！"
     x "え？突然出てきてお前は誰だって？見てわからないかい？近畿大学のマスコットのマグロだよ！(非公認)"
@@ -34,17 +42,71 @@ label start:
         "はい":
             jump d_yes
         "いいえ":
-            jump others
+            $ others = 1
+            call others
+
+    return
 
 label d_yes:
     m "それじゃあ、電算について説明するよ！"
 
-    jump others
+    $ others = 1
+    call others
+
+    return
 
 label others:
-    menu:
-        m "次にどれを聞きたい？"
-        "アカデミック":
-            jump academic
+    if others == 1:
+        $ others = 0
+        call others_menu
+    
+    if academic == 1:
+        $ academic = 0
+        call academic_menu
+    
+    if buildings == 1:
+        $ buildings = 0
+        call buildings_menu
+
+    call end
+       
+    return 
+
+label others_menu:
+    menu :
+        m "次はどこについて聞きたい？"
+        "アカデミックシアター":
+            $ academic = 1
+            call academic
         "校舎":
-            jump buildings
+            $ buildings = 1
+            call buildings 
+    return
+
+label academic_menu:
+    menu :
+        m "次はどこについて聞きたい？"
+        "校舎":
+            call buildings
+    return
+
+label buildings_menu:
+    menu :
+        m "次はどこについて聞きたい？"
+        "アカデミックシアター":
+            call academic
+    return
+    
+label academic:
+    m "アカデミックシアターというのは"
+    call others
+    return
+
+label buildings:
+    m "基本的に校舎は大まかに文系と理系の場所に分かれていて、"  
+    call others
+    return
+    
+label end:
+    m "それじゃあ君がまたここに来ることを願ってるよ！それじゃあ、またね！"
+    return

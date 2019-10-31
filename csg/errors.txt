@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: choice menuitem expects a non-empty block.
-    "いいえ":
-          ^
+File "game/script.rpy", line 54: if statement expects a non-empty block.
+    if others:
+              ^
+
+File "game/script.rpy", line 56: expected statement.
+    elif academic_done:
+                      ^
+
+File "game/script.rpy", line 58: expected statement.
+    elif buildings_done:
+                       ^
+
+File "game/script.rpy", line 60: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 7.3.4.596
-Thu Oct 31 10:19:26 2019
+Thu Oct 31 21:13:07 2019
