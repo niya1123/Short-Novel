@@ -10,6 +10,7 @@
 
 define m = Character('マグロ', color="#c8ffc8")
 define x = Character('?', color="#c8ffc8")
+define y = Character('あなた', color="#c8c8ff")
 
 
 # label ステートメント（文）はゲームの処理をまとめてラベル付けします。
@@ -23,19 +24,10 @@ label start:
     $ academic = 0
     $ buildings = 0
 
-    scene bg kindai
-    show magro at right
-    with fade
-
     play music "./songs/bgm_maoudamashii_piano27.ogg"
     $ renpy.music.set_volume(0.5)
 
-
-    x "やあ！近畿大学に遊びに来てくれてどうもありがとう！"
-    x "え？突然出てきてお前は誰だって？見てわからないかい？近畿大学のマスコットのマグロだよ！(非公認)"
-
-    m "ま、僕のことは置いておいてこれから近畿大学の紹介をしていこうと思うよ！"
-    m "まず、このゲームを作った電気計算機研究会（通称: 電算）について君は知りたいかい？"
+    call opening
 
     menu :
         "電算の説明を聞きますか？"
