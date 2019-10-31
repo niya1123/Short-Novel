@@ -3,6 +3,9 @@ label buildings:
     show magro at right
     with fade
     play music "songs/bgm_maoudamashii_piano_noapusa.ogg"
-    m "基本的に校舎は大まかに文系と理系の場所に分かれていて、"  
+    m "近畿大学には色々校舎があるんだけど、まずは英語村について説明するね！"
+    m "じゃあ移動するよ！"
+    hide magro
+    call ecube
     call others 
     return

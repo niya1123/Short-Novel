@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 31: end of line expected.
-    jump end1 from _call_end1
-              ^
+File "game/buildings.rpy", line 10: end of line expected.
+    call e-cube
+          ^
+
+File "game/e-cube.rpy", line 1: expected ':' not found.
+    label e-cube:
+           ^
 
 Ren'Py Version: Ren'Py 7.3.4.596
-Fri Nov 01 00:06:25 2019
+Fri Nov 01 00:23:47 2019
