@@ -40,18 +40,10 @@ label start:
     menu :
         "電算の説明を聞きますか？"
         "はい":
-            jump d_yes
+            call densan
         "いいえ":
             $ others = 1
             call others
-
-    return
-
-label d_yes:
-    m "それじゃあ、電算について説明するよ！"
-
-    $ others = 1
-    call others
 
     return
 
@@ -97,16 +89,7 @@ label buildings_menu:
             call academic
     return
     
-label academic:
-    m "アカデミックシアターというのは"
-    call others
-    return
-
-label buildings:
-    m "基本的に校舎は大まかに文系と理系の場所に分かれていて、"  
-    call others
-    return
-    
 label end:
+    play music "songs/bgm_maoudamashii_piano_milkeyway.ogg"
     m "それじゃあ君がまたここに来ることを願ってるよ！それじゃあ、またね！"
     return
