@@ -198,3 +198,4 @@ Total time until interface ready: 3.16106700897s
 - Frame drawn at 0.066457 seconds.
 - 0.066457 seconds to render 5 frames.
 The window was minimized.
+The window was restored.

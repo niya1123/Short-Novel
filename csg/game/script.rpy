@@ -22,6 +22,9 @@ label start:
     scene bg kindai
     with fade
 
+    show maguro at right
+    with dissolve
+
     x "やあみんな！近畿大学に遊びに来てくれてどうもありがとう！"
     x "え？突然出てきてお前は誰だって？見てわからないかい？近畿大学のマスコットのマグロだよ！(非公認)"
 
