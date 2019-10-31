@@ -8,7 +8,7 @@
 # 一番目のパラメーターは、テキストウィンドウに表示されるキャラクターの名前です。
 # color のパラメーターを追加すると、キャラクターの名前を色付けできます。
 
-define m = Character('マグロ?', color="#c8ffc8")
+define m = Character('マグロ', color="#c8ffc8")
 define x = Character('?', color="#c8ffc8")
 
 
@@ -20,18 +20,31 @@ define x = Character('?', color="#c8ffc8")
 label start:
 
     scene bg kindai
+    show maguro at right
     with fade
 
-    show maguro at right
-    with dissolve
-
-    x "やあみんな！近畿大学に遊びに来てくれてどうもありがとう！"
+    x "やあ！近畿大学に遊びに来てくれてどうもありがとう！"
     x "え？突然出てきてお前は誰だって？見てわからないかい？近畿大学のマスコットのマグロだよ！(非公認)"
 
     m "ま、僕のことは置いておいてこれから近畿大学の紹介をしていこうと思うよ！"
+    m "まず、このゲームを作った電気計算機研究会（通称: 電算）について君は知りたいかい？"
 
+    menu :
+        "電算の説明を聞きますか？"
+        "はい":
+            jump d_yes
+        "いいえ":
+            jump others
 
+label d_yes:
+    m "それじゃあ、電算について説明するよ！"
 
+    jump others
 
-    return
-
+label others:
+    menu:
+        m "次にどれを聞きたい？"
+        "アカデミック":
+            jump academic
+        "校舎":
+            jump buildings
