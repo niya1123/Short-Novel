@@ -8,11 +8,11 @@ label densan:
 
     m "では、どうぞ!"
     
-    call movie from _call_movie
+    call movie 
 
     m "どうだった？クォリティ高かったでしょ！もし、こういうのに興味があって近大に入ったら是非入部を検討してみてくださいね！"
 
     $ others = 1
-    call others from _call_others_2
+    call others 
 
     return
