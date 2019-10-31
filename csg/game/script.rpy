@@ -11,13 +11,6 @@
 define m = Character('マグロ', color="#c8ffc8")
 define x = Character('?', color="#c8ffc8")
 define y = Character('あなた', color="#c8c8ff")
-
-
-# label ステートメント（文）はゲームの処理をまとめてラベル付けします。
-# ラベル間の移動は jump ステートメントか call ステートメントを使います。
-
-# ゲームは start ラベルからスタートします。
-
 label start:
 
     $ others = 0
@@ -28,14 +21,6 @@ label start:
     $ renpy.music.set_volume(0.5)
 
     call opening
-
-    menu :
-        "電算の説明を聞きますか？"
-        "はい":
-            call densan
-        "いいえ":
-            $ others = 1
-            call others
 
     return
 
