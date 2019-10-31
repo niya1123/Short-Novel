@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+    novel:
+        build: .
+        container_name: novel
+        volumes:
+                - .:/app
+        command: /bin/bash
+        tty: true
+        stdin_open: true

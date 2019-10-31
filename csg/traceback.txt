@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 50, in script
+    jump buildings
+ScriptError: could not find label 'buildings'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 50, in script
+    jump buildings
+  File "/Users/niya/novel_game/Short-Novel/renpy_engine/renpy/ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Users/niya/novel_game/Short-Novel/renpy_engine/renpy/script.py", line 894, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'buildings'.
+
+Darwin-18.7.0-x86_64-i386-64bit
+Ren'Py 7.3.4.596
+csg 1.0
+Thu Oct 31 10:29:11 2019
