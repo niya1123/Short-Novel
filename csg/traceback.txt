@@ -1,42 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 456, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 456, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 466, in _execute_python_hide
-    renpy.load("_reload-2")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/opening.rpy", line 51, in script call
+    call others
+  File "game/academic.rpy", line 21, in script
+    show magro father onlayer user_layer
+Exception: Trying to add something to non-existent layer 'user_layer'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 212, in script call
-    call _load_reload_game from _call__load_reload_game_1
-  File "renpy/common/00keymap.rpy", line 456, in script
-    python hide:
-  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 914, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Short-Novel\renpy_engine\renpy\python.py", line 2008, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 456, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 466, in _execute_python_hide
-    renpy.load("_reload-2")
-  File "D:\Short-Novel\renpy_engine\renpy\loadsave.py", line 770, in load
-    log.unfreeze(roots, label="_after_load")
-  File "D:\Short-Novel\renpy_engine\renpy\python.py", line 1963, in unfreeze
-    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
-  File "D:\Short-Novel\renpy_engine\renpy\python.py", line 1795, in rollback
-    self.load_failed()
-  File "D:\Short-Novel\renpy_engine\renpy\python.py", line 1713, in load_failed
-    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
-Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+  File "game/opening.rpy", line 51, in script call
+    call others
+  File "game/academic.rpy", line 21, in script
+    show magro father onlayer user_layer
+  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 1183, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 1153, in show_imspec
+    atl=atl)
+  File "D:\Short-Novel\renpy_engine\renpy\exports.py", line 717, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "D:\Short-Novel\renpy_engine\renpy\display\core.py", line 1029, in add
+    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
+Exception: Trying to add something to non-existent layer 'user_layer'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.4.596
 csg 1.0
-Fri Nov 01 00:10:49 2019
+Fri Nov 01 01:36:17 2019

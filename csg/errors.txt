@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/buildings.rpy", line 10: end of line expected.
-    call e-cube
-          ^
-
-File "game/e-cube.rpy", line 1: expected ':' not found.
-    label e-cube:
-           ^
+File "game/academic.rpy", line 24: end of line expected.
+    show magro onlayer magro father at right
+                             ^
 
 Ren'Py Version: Ren'Py 7.3.4.596
-Fri Nov 01 00:23:47 2019
+Fri Nov 01 01:33:23 2019

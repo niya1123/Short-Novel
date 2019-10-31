@@ -33,7 +33,7 @@ label others:
 
 label others_menu:
     menu :
-        m "次はどこについて聞きたい？"
+        m "それじゃあ、どこについて聞きたい？"
         "アカデミックシアター":
             $ academic = 1
             jump academic 
