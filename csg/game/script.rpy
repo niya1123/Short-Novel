@@ -20,7 +20,7 @@ define x = Character('?', color="#c8ffc8")
 label start:
 
     scene bg kindai
-    show maguro at right
+    show magro at right
     with fade
 
     x "やあ！近畿大学に遊びに来てくれてどうもありがとう！"
