@@ -4,5 +4,5 @@ label academic:
     with fade
     play music "songs/bgm_maoudamashii_piano25.ogg"
     m "アカデミックシアターというのは"
-    call others
+    call others from _call_others_3
     return

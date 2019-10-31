@@ -45,10 +45,10 @@ label opening:
     menu :
         "電算の説明を聞きますか？"
         "はい":
-            call densan
+            call densan from _call_densan
         "いいえ":
             $ others = 1
-            call others
+            call others from _call_others
 
 
 
