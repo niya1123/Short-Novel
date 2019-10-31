@@ -1,16 +1,7 @@
-﻿# このファイルにはゲームのスクリプトを記述します。
-
-# Ren'Py のスクリプトは、インデント（行頭の空白）によってブロック分けされています。
-# インデントは Tab や Shift + Tab によって調整することができます。
-
-
-# まず最初に、ゲームに使うキャラクター（台詞を表示するオブジェクト）を定義します。
-# 一番目のパラメーターは、テキストウィンドウに表示されるキャラクターの名前です。
-# color のパラメーターを追加すると、キャラクターの名前を色付けできます。
-
-define m = Character('マグロ', color="#c8ffc8")
+﻿define m = Character('マグロ', color="#c8ffc8")
 define x = Character('?', color="#c8ffc8")
 define y = Character('あなた', color="#c8c8ff")
+
 label start:
 
     $ others = 0
