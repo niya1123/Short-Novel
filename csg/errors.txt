@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 25: expected statement.
+    \? "やあみんな！近畿大学に遊びに来てくれてどうもありがとう！"
+    ^
+
+File "game/script.rpy", line 26: expected statement.
+    \? "え？突然出てきてお前は誰だって？見てわからないかい？近畿大学のマスコットのマグロだよ！(非公認)"
+    ^
+
+Ren'Py Version: Ren'Py 7.3.4.596
+Thu Oct 31 09:45:50 2019
