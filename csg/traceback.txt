@@ -3,28 +3,32 @@
 While running game code:
   File "game/opening.rpy", line 51, in script call
     call others
-  File "game/academic.rpy", line 21, in script
-    show magro father onlayer user_layer
-Exception: Trying to add something to non-existent layer 'user_layer'.
+  File "game/buildings.rpy", line 10, in script call
+    call eleven
+  File "game/opening.rpy", line 51, in script call
+    call others
+  File "game/buildings.rpy", line 10, in script call
+    call eleven
+ScriptError: could not find label 'eleven'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/opening.rpy", line 51, in script call
     call others
-  File "game/academic.rpy", line 21, in script
-    show magro father onlayer user_layer
-  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 1183, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 1153, in show_imspec
-    atl=atl)
-  File "D:\Short-Novel\renpy_engine\renpy\exports.py", line 717, in show
-    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
-  File "D:\Short-Novel\renpy_engine\renpy\display\core.py", line 1029, in add
-    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
-Exception: Trying to add something to non-existent layer 'user_layer'.
+  File "game/buildings.rpy", line 10, in script call
+    call eleven
+  File "D:\Short-Novel\renpy_engine\renpy\ast.py", line 1436, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/opening.rpy", line 51, in script call
+    call others
+  File "game/buildings.rpy", line 10, in script call
+    call eleven
+  File "D:\Short-Novel\renpy_engine\renpy\script.py", line 894, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'eleven'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.4.596
 csg 1.0
-Fri Nov 01 01:36:17 2019
+Fri Nov 01 21:53:37 2019
