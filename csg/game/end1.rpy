@@ -1,6 +1,7 @@
 label end1:
     scene bg kindai
     show magro at center
+    with fade
     play music "songs/bgm_maoudamashii_piano_milkeyway.ogg"
     y "ありがとう、マグロさん！近畿大学の事がよく分かったよ！"
     m "それはよかった！"
