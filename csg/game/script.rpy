@@ -9,7 +9,7 @@ label start:
     $ buildings = 0
 
     play music "./songs/bgm_maoudamashii_piano27.ogg"
-    $ renpy.music.set_volume(0.5)
+    $ renpy.music.set_volume(0.3)
 
     jump opening 
     return
@@ -54,14 +54,4 @@ label buildings_menu:
         m "次はどこについて聞きたい？"
         "アカデミックシアター":
             jump academic 
-    return
-    
-label end1:
-    play music "songs/bgm_maoudamashii_piano_milkeyway.ogg"
-    y "ありがとう、マグロさん！近畿大学の事がよく分かったよ！"
-    m "それはよかった！"
-    m "是非君がまたここに来ることを願ってるよ！それじゃあ、またね！"
-    y "ありがとうマグロさん!"
-
-    "End1: ありがとう"
     return
