@@ -25,7 +25,7 @@ init python:
 
 ## アクセントカラー。タイトル・ラベル・ハイライトされたテキスト・ボタンの背景・
 ## スライダーのつまみ等、インターフェイスの様々な場所で使います。
-define gui.accent_color = '#99ccff'
+define gui.accent_color = '#f5e107'
 
 ## selected（選択中）でも hover（フォーカス中）でもない状態のテキストボタンのカ
 ## ラー。

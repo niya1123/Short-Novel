@@ -399,10 +399,10 @@ style main_menu_frame:
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -20
+    xoffset -300
     xmaximum 800
     yalign 1.0
-    yoffset -20
+    yoffset -350
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
