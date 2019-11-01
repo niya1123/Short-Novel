@@ -73,5 +73,5 @@ label academic:
     m "まぁアカデミックシアターの説明はこんなもんだね"
 
     y "ありがとうございました～"
-    call others 
+    call others from _call_others_3 
     return

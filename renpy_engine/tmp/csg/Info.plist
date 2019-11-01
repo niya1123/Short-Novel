@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>csg</string>
+	<string>ようこそ、近畿大学へ！</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -20,19 +20,19 @@
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>csg</string>
+	<string>hello_kindai</string>
 	<key>CFBundleIconFile</key>
 	<string>icon</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>csg</string>
+	<string>ようこそ、近畿大学へ！</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1572534078</string>
+	<string>1.0.1572615444</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.simulation-games</string>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>

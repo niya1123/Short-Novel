@@ -48,6 +48,6 @@ label opening:
             jump densan 
         "いいえ":
             $ others = 1
-            call others 
+            call others from _call_others 
 
 

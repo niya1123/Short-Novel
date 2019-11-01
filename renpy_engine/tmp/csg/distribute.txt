@@ -4,6 +4,8 @@ game/.DS_Store matches **/.** (None).
 game/academic.rpy matches ** ([u'all']).
 game/academic.rpy.bak matches **.bak (None).
 game/academic.rpyc matches ** ([u'all']).
+game/blossom.rpy matches ** ([u'all']).
+game/blossom.rpyc matches ** ([u'all']).
 game/buildings.rpy matches ** ([u'all']).
 game/buildings.rpy.bak matches **.bak (None).
 game/buildings.rpyc matches ** ([u'all']).
@@ -11,9 +13,15 @@ game/cache/ matches ** ([u'all']).
 game/cache/bytecode.rpyb matches ** ([u'all']).
 game/cache/pyanalysis.rpyb matches ** ([u'all']).
 game/cache/screens.rpyb matches ** ([u'all']).
+game/classroom.rpy matches ** ([u'all']).
+game/classroom.rpyc matches ** ([u'all']).
 game/densan.rpy matches ** ([u'all']).
 game/densan.rpy.bak matches **.bak (None).
 game/densan.rpyc matches ** ([u'all']).
+game/ecube.rpy matches ** ([u'all']).
+game/ecube.rpyc matches ** ([u'all']).
+game/end1.rpy matches ** ([u'all']).
+game/end1.rpyc matches ** ([u'all']).
 game/gui/ matches ** ([u'all']).
 game/gui/bar/ matches ** ([u'all']).
 game/gui/bar/bottom.png matches ** ([u'all']).
@@ -107,8 +115,19 @@ game/gui/window_icon.png matches ** ([u'all']).
 game/gui.rpy matches ** ([u'all']).
 game/gui.rpyc matches ** ([u'all']).
 game/images/ matches ** ([u'all']).
+game/images/bg 38.png matches ** ([u'all']).
+game/images/bg academic indoor.png matches ** ([u'all']).
 game/images/bg academic.png matches ** ([u'all']).
+game/images/bg b.png matches ** ([u'all']).
+game/images/bg blossom.png matches ** ([u'all']).
+game/images/bg building.png matches ** ([u'all']).
+game/images/bg cnn.png matches ** ([u'all']).
+game/images/bg donden.png matches ** ([u'all']).
+game/images/bg ecube.png matches ** ([u'all']).
+game/images/bg eleven.png matches ** ([u'all']).
 game/images/bg kindai.jpeg matches ** ([u'all']).
+game/images/bg kudos.png matches ** ([u'all']).
+game/images/magro father.png matches ** ([u'all']).
 game/images/magro.png matches ** ([u'all']).
 game/movie.rpy matches ** ([u'all']).
 game/movie.rpyc matches ** ([u'all']).
@@ -126,6 +145,11 @@ game/screens.rpyc matches ** ([u'all']).
 game/script.rpy matches ** ([u'all']).
 game/script.rpy.bak matches **.bak (None).
 game/script.rpyc matches ** ([u'all']).
+game/se/ matches ** ([u'all']).
+game/se/Accent18-1.mp3 matches ** ([u'all']).
+game/se/Onmtp-Negative05-3.mp3 matches ** ([u'all']).
+game/se/Onmtp-Surprise05-1.mp3 matches ** ([u'all']).
+game/se/se_maoudamashii_onepoint07.ogg matches ** ([u'all']).
 game/songs/ matches ** ([u'all']).
 game/songs/bgm_maoudamashii_piano25.ogg matches ** ([u'all']).
 game/songs/bgm_maoudamashii_piano27.ogg matches ** ([u'all']).
@@ -135,6 +159,9 @@ game/tl/ matches ** ([u'all']).
 game/tl/None/ matches ** ([u'all']).
 game/tl/None/common.rpym matches ** ([u'all']).
 game/tl/None/common.rpymc matches ** ([u'all']).
+ideas/ matches ** ([u'all']).
+ideas/BLOSSOM.txt matches ** ([u'all']).
+ideas/eigomura.txt matches ** ([u'all']).
 log.txt matches log.txt (None).
 traceback.txt matches traceback.txt (None).
 .DS_Store matches **/.* (None).
