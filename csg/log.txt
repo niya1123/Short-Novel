@@ -1,18 +1,18 @@
-Thu Dec  5 10:02:28 2019
+Thu Dec  5 15:59:08 2019
 Darwin-18.7.0-x86_64-i386-64bit
 Ren'Py 7.3.4.596
  
 
-Bootstrap to the start of init.init took 0.09s
+Bootstrap to the start of init.init took 0.08s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.03s
-Loading script took 0.13s
-Loading save slot metadata. took 0.04s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.04s
+Running init code took 0.05s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Dump and make backups. took 0.06s
@@ -20,9 +20,9 @@ Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.000000
-Creating interface object took 0.26s
+Creating interface object took 0.21s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.01s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
@@ -188,11 +188,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.27988505363s
+Total time until interface ready: 1.09951090813s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.021682 seconds.
-- Frame drawn at 0.035954 seconds.
-- Frame drawn at 0.051231 seconds.
-- Frame drawn at 0.066904 seconds.
-- 0.066904 seconds to render 5 frames.
+- Frame drawn at 0.019118 seconds.
+- Frame drawn at 0.032826 seconds.
+- Frame drawn at 0.049981 seconds.
+- Frame drawn at 0.065419 seconds.
+- 0.065419 seconds to render 5 frames.
